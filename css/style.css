@@ -1,0 +1,19 @@
+/* Pasta Global */
+
+@import "./global/header.css";
+@import "./global/global.css";
+
+/* Pasta home: */
+
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+
+/* Pasta utilidades que contém estilo reeutilizáveis */
+
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+/* Bicicletas */
+
+@import "../css/bicicletas/bicicletas-lista.css";
