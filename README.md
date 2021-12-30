@@ -3,7 +3,7 @@
 
 O curso me proporcionou um ótimo entendimento sobre como as tags semânticas funcionam e de como elas são importantes para os leitores de tela, coisas que eu nunca conseguia entender antes.
 
-Além disso, com este curso pude aprender os fundamentos do **GRID** facilmente e **FLEXBOX**. 
+Além disso, com este curso pude aprender os fundamentos do **GRID** e  **FLEXBOX** facilmente. 
 
 <hr>
 
