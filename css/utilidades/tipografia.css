@@ -41,11 +41,11 @@
 }
 
 .font-2-xs {
-    font: 400, 0.875rem/1.4 "Roboto", sans-serif;
+    font: 400 0.875rem/1.4 "Roboto", sans-serif;
 }
 
 .font-1-xs {
-    font: 600, 0.75rem/1.3 "Poppins", sans-serif;
+    font: 400 0.75rem/1.3 "Poppins", sans-serif;
 }
 
 @media (max-width: 1200px) {
