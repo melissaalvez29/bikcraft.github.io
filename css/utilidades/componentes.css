@@ -105,4 +105,7 @@
         text-transform: lowercase;
         font-weight: 400;
     }
+    #nimbus.titulo p {
+        text-transform: uppercase;
+    }
 }
