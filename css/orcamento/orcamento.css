@@ -20,7 +20,7 @@
     display: inline-block;
     width: 4px;
     height: 8px;
-    background-color: var(--cor-p1);
+    background-color: var(--cor-p5);
     position: absolute;
     left: -12px;
 }
@@ -88,7 +88,7 @@
 }
 
 .orcamento-produto input:focus+label {
-    box-shadow: 0 0 0 2px var(--cor-p1);
+    box-shadow: 0 0 0 2px var(--cor-p5);
     border-color: var(--cor-12);
 }
 
