@@ -14,6 +14,7 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
+    border-radius: 4px;
 }
 
 .tecnologia-conteudo {

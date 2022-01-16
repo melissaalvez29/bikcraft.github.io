@@ -30,9 +30,10 @@ a {
 
 img {
     display: block;
+    height: auto;
     max-width: 100%;
 }
 
-img[src$="jpg"] {
+img[src$=".jpg"] {
     border-radius: 4px;
 }
