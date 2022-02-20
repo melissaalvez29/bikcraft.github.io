@@ -1,21 +1,20 @@
-//Ativar links do menu
-const links = document.querySelectorAll(".header-menu a");
+/* Menu ativo */
+function initLink() {
+    const linksMenu = document.querySelectorAll(".header-menu a");
 
-function ativarLink(link) {
-    const url = window.location.href;
-    const href = link.href;
-
-    /* Verifica se a palavra existe ou não */
-    /* url.includes; */
-
-    if (url.includes(href)) {
-        link.classList.add("ativo");
+    function ativarLink(link) {
+        const url = location.href;
+        const href = link.href;
+        if (url.includes(href)) {
+            link.classList.add("ativo");
+        }
     }
+
+    linksMenu.forEach(ativarLink);
 }
+initLink();
 
-links.forEach(ativarLink);
-
-//Ativar itens do orçamento
+//Parâmetros
 const parametros = new URLSearchParams(location.search);
 
 function ativarProduto(parametro) {
@@ -27,9 +26,8 @@ function ativarProduto(parametro) {
 
 parametros.forEach(ativarProduto);
 
-console.log(parametros);
+//perguntas freq
 
-/* Perguntas frequentes */
 const perguntas = document.querySelectorAll(".perguntas button");
 
 function ativarPergunta(event) {
@@ -40,10 +38,35 @@ function ativarPergunta(event) {
     resposta.classList.toggle("ativa");
     const ativa = resposta.classList.contains("ativa");
     pergunta.setAttribute("aria-expanded", ativa);
-    console.log(resposta);
 }
 
 function eventosPerguntas(pergunta) {
     pergunta.addEventListener("click", ativarPergunta);
 }
+
 perguntas.forEach(eventosPerguntas);
+
+//Galeria de Bicicleta
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+function trocarImagem(event) {
+    //selecionando a própria imagem
+    let img = event.currentTarget;
+
+    const media = matchMedia("(min-width: 1000px)").matches;
+    if (media) {
+        galeriaContainer.prepend(img);
+    }
+}
+
+function eventosGaleria(img) {
+    img.addEventListener("click", trocarImagem);
+}
+galeria.forEach(eventosGaleria);
+
+//Animação:
+
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}
