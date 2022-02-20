@@ -81,7 +81,7 @@
 
                 <!-- Section de formulário -->
                 <section aria-label="formulario" class="contato-formulario">
-                    <form class="form" action="./contato.html">
+                    <form class="form" action="./enviar.php" method="post">
 
                         <div>
                             <label for="nome">Nome</label>
@@ -95,7 +95,7 @@
 
                         <div class="col-2">
                             <label for="email">email</label>
-                            <input type="email" id="email" name="email" placeholder="contato@exemplo.com">
+                            <input type="email" id="email" name="email" placeholder="contato@exemplo.com" required>
                         </div>
 
                         <div class="col-2">
@@ -198,6 +198,7 @@
 
         </footer>
 
+        <script src="./js/formulairo.js"></script>
         <script src="./js/script.js"></script>
 
     </body>
